@@ -13,14 +13,14 @@ export type Props = {
   title?: string
   content?: string
   demo?: JSX.Element
-  href?: string
+  repo?: string
 }
 
 export const Template: FC<Props> = ({
   title = menu.find(item => '#/' + item.path === location.hash)?.label,
   content = readme,
   demo,
-  href,
+  repo,
 }) => {
   document.title = title || '司南前端训练营'
 
@@ -48,8 +48,8 @@ export const Template: FC<Props> = ({
           </Button>
         )}
 
-        {href && (
-          <Button type='primary' size='large' className={styles['button']} href={href}>
+        {repo && (
+          <Button type='primary' size='large' className={styles['button']} href={repo}>
             访问仓库
           </Button>
         )}

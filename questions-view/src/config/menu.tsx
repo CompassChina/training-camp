@@ -21,7 +21,7 @@ export default [
       <Template
         content={NumberInput_Readme}
         demo={<NumberInput />}
-        href='https://github.com/CompassChina/compass-fe-camp--q1-NumberInput'
+        repo='https://github.com/CompassChina/compass-fe-camp--q1-NumberInput'
       />
     ),
   },
