@@ -22,6 +22,7 @@ export default [
         content={NumberInput_Readme}
         demo={<NumberInput />}
         repo='https://github.com/CompassChina/compass-fe-camp--q1-NumberInput'
+        slack='https://compass-china.slack.com/archives/C03HJ00CXDK'
       />
     ),
   },

@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react'
 import Markdown from 'react-markdown'
 import { Layout, Button, Modal } from 'antd'
-import { HeartOutlined, StarOutlined } from '@ant-design/icons'
+import { HeartOutlined, StarOutlined, MessageTwoTone } from '@ant-design/icons'
 
 import menu from '../config/menu'
 import readme from '../../../README.md?raw'
@@ -14,6 +14,7 @@ export type Props = {
   content?: string
   demo?: JSX.Element
   repo?: string
+  slack?: string
 }
 
 export const Template: FC<Props> = ({
@@ -21,6 +22,7 @@ export const Template: FC<Props> = ({
   content = readme,
   demo,
   repo,
+  slack,
 }) => {
   document.title = title || '司南前端训练营'
 
@@ -51,6 +53,18 @@ export const Template: FC<Props> = ({
         {repo && (
           <Button type='primary' size='large' className={styles['button']} href={repo}>
             访问仓库
+          </Button>
+        )}
+
+        {slack && (
+          <Button
+            type='text'
+            size='large'
+            href={slack}
+            icon={<MessageTwoTone twoToneColor='#7cb305' />}
+            style={{ color: '#7cb305' }}
+          >
+            讨论交流
           </Button>
         )}
       </Footer>
