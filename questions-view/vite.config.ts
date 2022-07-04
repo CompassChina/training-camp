@@ -8,7 +8,6 @@ export default defineConfig({
     emptyOutDir: true,
     chunkSizeWarningLimit: 1000,
     outDir: '../../docs',
-    assetsDir: '',
     rollupOptions: {
       output: {
         entryFileNames: 'index.js',
