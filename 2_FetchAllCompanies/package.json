@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}
