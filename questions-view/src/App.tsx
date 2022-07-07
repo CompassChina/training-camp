@@ -18,15 +18,15 @@ export const App: FC = () => {
   return (
     <Layout>
       <Sider width='30vw'>
-        <Layout className={styles['menu']}>
-          <Header className={styles['menuTop']}>
+        <Layout className={styles['sider']}>
+          <Header className={styles['header']}>
             <div className={styles['title']}>
               <CompassTwoTone />
               司南前端训练营
             </div>
             <Search placeholder='搜索题目' disabled />
           </Header>
-          <Content>
+          <Content className={styles['content']}>
             <Menu
               items={menu.map(item => ({
                 label: item.label,
